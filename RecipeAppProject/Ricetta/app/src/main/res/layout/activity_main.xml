@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />/>
+
+    <Button
+        android:id="@+id/btnmealtime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Öğünler"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnsearchdishes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsearchdishes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Arama ve Genel Yemekler"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnrecipeadding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmealtime" />
+
+    <Button
+        android:id="@+id/btnrecipeadding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Kendi Tarifini Yaz"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnfav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsearchdishes" />
+
+    <Button
+        android:id="@+id/btnfav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Favori Tariflerim"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnbasket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnrecipeadding" />
+
+    <Button
+        android:id="@+id/btnbasket"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Sepetim"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnuseracc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfav" />
+
+    <Button
+        android:id="@+id/btnuseracc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Hesap İşlemlerim"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbasket" />
+
+    <ImageView
+        android:id="@+id/clockImage"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnmealtime"
+        app:layout_constraintStart_toStartOf="@+id/btnmealtime"
+        app:layout_constraintTop_toTopOf="@+id/btnmealtime"
+        app:srcCompat="@drawable/clock" />
+
+    <ImageView
+        android:id="@+id/writeImage"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnrecipeadding"
+        app:layout_constraintStart_toStartOf="@+id/btnrecipeadding"
+        app:layout_constraintTop_toTopOf="@+id/btnrecipeadding"
+        app:srcCompat="@drawable/write" />
+
+    <ImageView
+        android:id="@+id/searchImage"
+        android:layout_width="63dp"
+        android:layout_height="100dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnsearchdishes"
+        app:layout_constraintStart_toStartOf="@+id/btnsearchdishes"
+        app:layout_constraintTop_toTopOf="@+id/btnsearchdishes"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/favouriteImage"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnfav"
+        app:layout_constraintStart_toStartOf="@+id/btnfav"
+        app:layout_constraintTop_toTopOf="@+id/btnfav"
+        app:srcCompat="@drawable/favourite" />
+
+    <ImageView
+        android:id="@+id/basketImage"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnbasket"
+        app:layout_constraintStart_toStartOf="@+id/btnbasket"
+        app:layout_constraintTop_toTopOf="@+id/btnbasket"
+        app:srcCompat="@drawable/basket" />
+
+    <ImageView
+        android:id="@+id/gearsImage"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnuseracc"
+        app:layout_constraintStart_toStartOf="@+id/btnuseracc"
+        app:layout_constraintTop_toTopOf="@+id/btnuseracc"
+        app:srcCompat="@drawable/gears" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

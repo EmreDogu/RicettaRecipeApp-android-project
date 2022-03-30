@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Ana Ekran" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="Arama" />
+    <item
+        android:id="@+id/favourites"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoriler" />
+    <item
+        android:id="@+id/basket"
+        android:icon="@drawable/ic_shoppingcart"
+        android:title="Sepet" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_settings"
+        android:title="Hesap" />
+</menu>

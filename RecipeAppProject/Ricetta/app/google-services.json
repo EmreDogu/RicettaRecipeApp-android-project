@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "259866768096",
+    "project_id": "muglamaapp",
+    "storage_bucket": "muglamaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259866768096:android:acc95c56ed0b2a5a84d685",
+        "android_client_info": {
+          "package_name": "com.yasinexample.project_mulama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259866768096-e8olemmpp3ec52rrjmkchk182og4k1s9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ5R0wbkNIpZyabg5SfAOxOzU4rvgoe00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259866768096-e8olemmpp3ec52rrjmkchk182og4k1s9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259866768096:android:6e9fc1eb6479a3ed84d685",
+        "android_client_info": {
+          "package_name": "com.yasinexample.ricetta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259866768096-e8olemmpp3ec52rrjmkchk182og4k1s9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ5R0wbkNIpZyabg5SfAOxOzU4rvgoe00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259866768096-e8olemmpp3ec52rrjmkchk182og4k1s9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
